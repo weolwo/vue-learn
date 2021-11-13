@@ -13,11 +13,13 @@ Vue.config.productionTip = false
 Vue.use(vueResource)
 
 //创建vm
-new Vue({
-	el:'#app',
-	render: h => h(App),
-	store,
-	beforeCreate() {
-		Vue.prototype.$bus = this
-	}
+const vm = new Vue({
+    el: '#app',
+    render: h => h(App),
+    store,
+    beforeCreate() {
+        Vue.prototype.$bus = this
+    }
+
 })
+console.log(vm)

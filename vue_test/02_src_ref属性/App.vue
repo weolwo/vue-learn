@@ -12,7 +12,9 @@
 
 	export default {
 		name:'App',
-		components:{School},
+		components:{
+      School
+    },
 		data() {
 			return {
 				msg:'欢迎学习Vue！'

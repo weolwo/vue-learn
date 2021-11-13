@@ -4,7 +4,7 @@
 		<h2>学生性别：{{sex}}</h2>
 		<h2>当前求和为：{{number}}</h2>
 		<button @click="add">点我number++</button>
-		<button @click="sendStudentlName">把学生名给App</button>
+		<button @click="sendStudentName">把学生名给App</button>
 		<button @click="unbind">解绑atguigu事件</button>
 		<button @click="death">销毁当前Student组件的实例(vc)</button>
 	</div>
@@ -25,7 +25,7 @@
 				console.log('add回调被调用了')
 				this.number++
 			},
-			sendStudentlName(){
+			sendStudentName(){
 				//触发Student组件实例身上的atguigu事件
 				this.$emit('atguigu',this.name,666,888,900)
 				// this.$emit('demo')

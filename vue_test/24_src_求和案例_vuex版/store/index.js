@@ -5,7 +5,7 @@ import Vuex from 'vuex'
 //应用Vuex插件
 Vue.use(Vuex)
 
-//准备actions——用于响应组件中的动作
+//准备actions——用于响应组件中的动作 ，类似于餐厅的服务员，可以处理一些简单的顾客需求
 const actions = {
 	/* jia(context,value){
 		console.log('actions中的jia被调用了')
@@ -28,7 +28,7 @@ const actions = {
 		},500)
 	}
 }
-//准备mutations——用于操作数据（state）
+//准备mutations——用于操作数据（state），类似于餐厅的后厨，负责加工
 const mutations = {
 	JIA(state,value){
 		console.log('mutations中的JIA被调用了')

@@ -14,7 +14,7 @@
 			<button @click="sortType = 1">年龄降序</button>
 			<button @click="sortType = 0">原顺序</button>
 			<ul>
-				<li v-for="(p,index) of filPerons" :key="p.id">
+				<li v-for="(p,index) of fillPersons" :key="p.id">
 					{{p.name}}-{{p.age}}-{{p.sex}}
 					<input type="text">
 				</li>
@@ -37,7 +37,7 @@
 					]
 				},
 				computed:{
-					filPerons(){
+					fillPersons(){
 						const arr = this.persons.filter((p)=>{
 							return p.name.indexOf(this.keyWord) !== -1
 						})

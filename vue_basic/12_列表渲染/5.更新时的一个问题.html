@@ -36,6 +36,7 @@
 						// this.persons[0].age = 50 //奏效
 						// this.persons[0].sex = '男' //奏效
 						// this.persons[0] = {id:'001',name:'马老师',age:50,sex:'男'} //不奏效
+						/*vue 对于数组里面元素的箭头改变是通过用户调研数组的方法实现的，而不能直接操作数组的下标*/
 						this.persons.splice(0,1,{id:'001',name:'马老师',age:50,sex:'男'})
 					}
 				}
