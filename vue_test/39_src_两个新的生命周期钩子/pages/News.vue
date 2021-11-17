@@ -26,6 +26,8 @@
 				if(this.opacity <= 0) this.opacity = 1
 			},16)
 		}, */
+    // 这两个生命周期钩子函数主要为了解决，路由缓存导致组件在路由变化时，组件销毁方法不会被调用，组件也就不会被销毁，
+    // 从而导致里面的定时器没被销毁，带来的效率问题
 		activated() {
 			console.log('News组件被激活了')
 			this.timer = setInterval(() => {

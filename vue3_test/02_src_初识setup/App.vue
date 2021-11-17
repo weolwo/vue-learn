@@ -39,7 +39,7 @@
 			}
 		},
 		//此处只是测试一下setup，暂时不考虑响应式的问题。
-		async setup(){
+		/*async*/ setup(){ // 加async 会导致返回promise 类型
 			//数据
 			let name = '张三'
 			let age = 18

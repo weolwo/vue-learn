@@ -31,7 +31,7 @@
 			}
 
 			// let keyWord = ref('hello') //使用Vue提供的ref
-			let keyWord = myRef('hello',500) //使用程序员自定义的ref
+			let keyWord = myRef('hello',300) //使用程序员自定义的ref，这样可以防抖，防止用户重复提交
 			
 			return {keyWord}
 		}

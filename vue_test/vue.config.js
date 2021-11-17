@@ -2,7 +2,7 @@ module.exports = {
   pages: {
     index: {
       //入口
-      entry: 'src/main.js',
+      entry: '31_src_多级路由/main.js',
     },
   },
 	lintOnSave:false, //关闭语法检查

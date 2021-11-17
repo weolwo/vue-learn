@@ -36,10 +36,12 @@
 			//返回一个对象（常用）
 			return {
 				person,
+        //此处如果直接使用   name:ref(person.name),这样返回页面的name和person中属性name没关系，
+        // 当修改name时，改的是ref新弄出来来的name,和person中的name没有关系，也就失去了响应式
 				// name:toRef(person,'name'),
 				// age:toRef(person,'age'),
 				// salary:toRef(person.job.j1,'salary'),
-				...toRefs(person)
+				...toRefs(person)// ...把对象摊开
 			}
 		}
 	}

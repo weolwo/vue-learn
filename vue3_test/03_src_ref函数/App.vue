@@ -20,6 +20,7 @@
 				salary:'30K'
 			})
 
+      //vue中 对于基本的数据类型和对象，分别做了不同的书代理，基本数据还是vue2中的那套，但是对于对象则使用了 es6中的proxy
 			//方法
 			function changeInfo(){
 				// name.value = '李四'

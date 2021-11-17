@@ -39,7 +39,7 @@ export default new VueRouter({
 							// props:true
 
 							//props的第三种写法，值为函数
-							props($route){
+							props($route){ //{query}
 								return {
 									id:$route.query.id,
 									title:$route.query.title,
